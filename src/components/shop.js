@@ -38,7 +38,7 @@ class Shop extends Component {
             <Counter />
             <Buttons />
 
-            <Grid container spacing={3}>
+            <Grid container spacing={8}>
               <Grid item xs>
                 <Button variant="contained" color="primary" size="large" onClick={this.buyBronzeWorkbench}>Купить бронзовый верстак за  
                 {bronzewb.price} коинов</Button>

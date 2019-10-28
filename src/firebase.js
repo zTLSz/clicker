@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import * as firebaseui from 'firebaseui';
 
 const config = {
     apiKey: "AIzaSyCdrmLMipFsOhKB1XMxff-aw3_eIO6HG0k",
@@ -13,4 +14,5 @@ const config = {
 firebase.initializeApp(config);
 firebase.analytics();
 const databaseRef = firebase.database().ref();
+export const ui = new firebaseui.auth.AuthUI(firebase.auth());
 export const clickerRef = databaseRef.child("clicker")
